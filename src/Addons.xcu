@@ -6,12 +6,12 @@
  oor:package="org.openoffice.Office">
 	<node oor:name="AddonUI">
 		<node oor:name="AddonMenu">
-				<node oor:name="jstest.AddonMenu.m1" oor:op="replace">
+				<node oor:name="n2dzhe.AddonMenu.m1" oor:op="replace">
 					<prop oor:name="Context" oor:type="xs:string">
 						<value>com.sun.star.text.TextDocument</value>
 					</prop>
 					<prop oor:name="URL" oor:type="xs:string">
-						<value>vnd.sun.star.script:Library1.Macro1.js?language=JavaScript&amp;location=user:uno_packages/jstest-1.0.0.oxt</value>
+						<value>vnd.sun.star.script:Library1.Macro1.js?language=JavaScript&amp;location=user:uno_packages/n2dzhe-1.0.0.oxt</value>
 					</prop>
 					<prop oor:name="Title" oor:type="xs:string">
 						<value>_JS~Test</value>
