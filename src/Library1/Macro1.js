@@ -63,10 +63,19 @@ xReplaceDescr = UnoRuntime.queryInterface(XReplaceDescriptor, xReplaceable.creat
 //xTextRange.setString( "Hello World (in JavaScript)" );
 
 //xReplaceDescr = oDoc.createReplaceDescriptor();
-xReplaceDescr.setSearchString("њ");
+
 xReplaceDescr.setPropertyValue('SearchCaseSensitive', true);
-xReplaceDescr.setReplaceString("ӝ");
-xFound = xReplaceable.replaceAll( xReplaceDescr );
+var a = "љќџћњЉЌЏЋЊ";
+var b = "ӝӧӵӥӟӜӦӴӤӞ";
+for (var i = 0; i < a.length; i++) {
+    xReplaceDescr.setSearchString(
+        a.charAt(i)
+    );
+    xReplaceDescr.setReplaceString(
+        b.charAt(i)
+    );
+    xFound = xReplaceable.replaceAll( xReplaceDescr );
+}
 
 
 
