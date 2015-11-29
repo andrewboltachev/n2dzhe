@@ -1,25 +1,61 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <oor:component-data 
- xmlns:oor="http://openoffice.org/2001/registry"
- xmlns:xs="http://www.w3.org/2001/XMLSchema"
- oor:name="Addons"
- oor:package="org.openoffice.Office">
-	<node oor:name="AddonUI">
-		<node oor:name="AddonMenu">
-				<node oor:name="n2dzhe.AddonMenu.m1" oor:op="replace">
-					<prop oor:name="Context" oor:type="xs:string">
-						<value>com.sun.star.text.TextDocument</value>
-					</prop>
-					<prop oor:name="URL" oor:type="xs:string">
-						<value>vnd.sun.star.script:Library1.Macro1.js?language=JavaScript&amp;location=user:uno_packages/n2dzhe-1.0.0.oxt</value>
-					</prop>
-					<prop oor:name="Title" oor:type="xs:string">
-						<value>_JS~Test</value>
-					</prop>
-					<prop oor:name="Target" oor:type="xs:string">
-						<value>_self</value>
-					</prop>
-				</node>
-		</node>
-	</node>
+oor:name="Addons" 
+oor:package="org.openoffice.Office" 
+xmlns:install="http://openoffice.org/2004/installation" 
+xmlns:oor="http://openoffice.org/2001/registry" 
+xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+ <node oor:name="AddonUI">
+  <node oor:name="OfficeMenuBarMerging">
+   <node oor:name="org.openoffice.test.testcomponent" oor:op="replace">
+    <node oor:name="S1" oor:op="replace">
+     <prop oor:name="MergePoint">
+      <value>.uno:ToolsMenu</value>
+     </prop>
+     <prop oor:name="MergeCommand">
+      <value>AddAfter</value>
+     </prop>
+     <prop oor:name="MergeFallback">
+      <value>AddPath</value>
+     </prop>
+     <node oor:name="MenuItems">
+      <node oor:name="M1" oor:op="replace">
+       <prop oor:name="Title">
+        <value xml:lang="en-US">IT-~Udmurtlyk</value>
+        <value xml:lang="ru">IT-~Удмуртлык</value>
+        <value xml:lang="udm">IT-~Удмуртлык</value>
+       </prop>
+       <node oor:name="Submenu">
+
+        <node oor:name="M1" oor:op="replace">
+         <prop oor:name="Title">
+          <value xml:lang="en-US">њ -&gt; ӝ</value>
+          <value xml:lang="ru">њ -&gt; ӝ</value>
+          <value xml:lang="udm">њ -&gt; ӝ</value>
+         </prop>
+         <prop oor:name="URL">
+          <value>vnd.sun.star.script:Library1.Macro1.js?language=JavaScript&amp;location=user:uno_packages/n2dzhe-1.0.0.oxt</value>
+         </prop>
+        </node>
+
+        <!--
+        <node oor:name="M2" oor:op="replace">
+         <prop oor:name="Title">
+          <value xml:lang="en-US">Help</value>
+         </prop>
+         <prop oor:name="URL">
+          <value>.uno:HelpIndex</value>
+         </prop>
+        </node>
+        -->
+
+       </node>
+      </node>
+     </node>
+    </node>
+   </node>
+  </node>
+ </node>
 </oor:component-data>
+
