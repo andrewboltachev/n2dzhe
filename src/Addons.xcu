@@ -35,7 +35,7 @@ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
           <value xml:lang="udm">Тупатыны алама удмурт букваосыз</value>
          </prop>
          <prop oor:name="URL">
-          <value>vnd.sun.star.script:Library1.Macro1.js?language=JavaScript&amp;location=user:uno_packages/n2dzhe-1.0.0.oxt</value>
+          <value>vnd.sun.star.script:Library1.Macro1.js?language=JavaScript&amp;location=user:uno_packages/kuchyran-1.0.0.oxt</value>
          </prop>
         </node>
 
