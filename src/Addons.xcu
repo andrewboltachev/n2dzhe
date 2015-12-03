@@ -22,17 +22,17 @@ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
      <node oor:name="MenuItems">
       <node oor:name="M1" oor:op="replace">
        <prop oor:name="Title">
-        <value xml:lang="en-US">IT-~Udmurtlyk</value>
-        <value xml:lang="ru">IT-~Удмуртлык</value>
-        <value xml:lang="udm">IT-~Удмуртлык</value>
+        <value xml:lang="en-US">Udmspell</value>
+        <value xml:lang="ru">Udmspell</value>
+        <value xml:lang="udm">Udmspell</value>
        </prop>
        <node oor:name="Submenu">
 
         <node oor:name="M1" oor:op="replace">
          <prop oor:name="Title">
-          <value xml:lang="en-US">њ -&gt; ӝ</value>
-          <value xml:lang="ru">њ -&gt; ӝ</value>
-          <value xml:lang="udm">њ -&gt; ӝ</value>
+          <value xml:lang="en-US">Fix wrong udmurt charasters</value>
+          <value xml:lang="ru">Исправить удмуртские буквы</value>
+          <value xml:lang="udm">Тупатыны алама удмурт букваосыз</value>
          </prop>
          <prop oor:name="URL">
           <value>vnd.sun.star.script:Library1.Macro1.js?language=JavaScript&amp;location=user:uno_packages/n2dzhe-1.0.0.oxt</value>
